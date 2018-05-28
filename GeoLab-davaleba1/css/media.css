@@ -1,0 +1,166 @@
+@media(min-width : 1400px) {
+	.contact-info h1 {
+		font-size : 40px;
+	}
+	.social{
+		padding-top: 90px;
+	}
+	.Clicktoview{
+		width: 43%;
+	}
+	.Clicktoview a {
+		font-size: 35px;
+	}
+	.down-part{
+		margin-top: 60px;
+	}
+	.message{
+		font-size: 15px;
+	}
+}
+
+@media(max-width : 768px) {
+	#nav-icon{
+		left: 91%;
+		bottom: 89%;
+	}
+	.content{
+		width: 90%;
+	}
+	.contact{
+		border:none;
+		flex-direction: column-reverse;
+		height: 90%;
+		top:50%;
+	}
+	.contact-form{
+		height: 85%;
+		width: 100%;
+		background-color: #EBE8DE;
+	}
+	.contact-info{
+		flex-direction: row;
+		width: 100%;
+		height: 10%;
+		background-color: transparent;
+	}
+	.contact-info h1{
+		display: none;
+	}
+	.Clicktoview a{
+		font-size: 5vw;
+		display: flex;
+		flex-direction: flex-start;
+	}
+	.social{
+		flex-direction: row;
+		justify-content:space-between;
+		padding-top: 0px;
+	}
+	.social-icons{
+		width: 50%;
+		padding-top: 0px;
+		justify-content: flex-end;
+	}
+	.footer{
+		margin-top: 300px;
+		border-top: 1px solid #EBE8DE;
+	}
+	.form-control{
+		width: 100%;
+		background-color: #F2F2F2;
+	}
+	.form-group textarea{
+		background-color: #F2F2F2;
+		width: 100%;
+	}
+	.title{
+		text-align: center;
+	}
+	.title h1{
+		font-size: 40px;
+	}
+	.submit-button{
+		padding-top: 10%;
+		padding-left: 50%;
+	}
+}
+
+@media(max-width: 576px){
+	#nav-icon{
+		left: 90%;
+		bottom: 88%;
+	}
+	.services{
+		flex-direction: column;
+		align-items: center;
+	}
+	.service-item{
+		padding-bottom: 4%;
+		width: 70%;
+	}
+	.description a{
+		font-size: 9vw;
+	}
+	.animation{
+		display: none;
+	}
+	.title{
+		width: 100%;
+	}
+	.contact{
+		top: 50%;
+		height: 800px;
+	}
+	.contact-form{
+		display: block;
+		height: 100%;
+	}
+	.contact-form form{
+		flex-direction: column;
+	}
+	.left-side{
+		width: 90%;
+		padding:0px;
+		margin: 0 auto;
+	}
+	.top-part{
+		width: 100%;
+	}
+	.submit-button{
+		padding-top: 20%;
+		padding-left: 0%;
+	}
+	.social{
+		padding-top: 50px;
+	}
+	.footer{
+		margin-top: 550px;
+	}
+	.ft-wrapper{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media(max-width: 442px){
+	#nav-icon{
+		left: 85%;
+		bottom: 80%;
+	}
+	.social{
+		padding-top: 50px;
+	}
+	.contact{
+		height: 910px;
+	}
+	.footer{
+		margin-top: 660px;
+	}
+	.icon-wrapper{
+		height: 35px;
+		width: 35px;
+	}
+}
+
+
+

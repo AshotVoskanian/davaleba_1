@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GeoLab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	<div class="header">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/Ресурс 1.png">
+					<div class="carousel-caption1">
+					    <div class="date-title">
+							<p id="demo1"></p>
+							<p>Vintage Auto Exhibition</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item ">
+					<img src="img/Ресурс 1.png" >
+					<div class="carousel-caption1">
+					    <div class="date-title">
+							<p id="demo2"></p>
+							<p>Vintage Auto Exhibition</p>
+						</div>
+					</div>
+				</div>
+			</div>		  
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-slide-icon">
+					<img src="img/Ресурс 23.png">
+				</span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-slide-icon">
+					<img src="img/Ресурс 22.png">
+				</span>
+			</a>
+			<div class="mobile-menu">
+				<div class="nav-menu">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#services" class="down-link">SERVICES</a></li>
+						<li><a href="#contact" class="down-link">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="auto">
+				<img src="img/Ресурс 2.png">
+			</div>
+			<div class="auto-red">
+				<img src="img/Ресурс 20.png">
+			</div>
+			<div id="nav-icon">
+			  	<span></span>
+			  	<span class="middle"></span>
+			  	<span class="middle"></span>
+			  	<span></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div >
+			<h1>THE CORNER GARAGE FOR COLLECTOR CARS</h1>
+		</div>
+		<div class="services" id="services">
+			<div class="service-item">
+				<img src="img/ser.png">
+				<div id="img1" class="description-img">
+					<img src="img/ser1.png">
+				</div>
+				<div class="description">
+					<a href="#">MODIFY</a>
+				</div>
+			</div>
+			<div class="service-item">
+				<img src="img/ser.png">
+				<div id="img2" class="description-img">
+					<img src="img/ser2.png">
+				</div>
+				<div class="description">
+					<a href="#">BUY</a>
+				</div>
+			</div>
+			<div class="service-item">
+				<img src="img/ser.png">
+				<div id="img3" class="description-img">
+					<img src="img/ser3.png">
+				</div>
+				<div class="description">
+					<a href="#">REPAIR</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="animation">
+		<img src="img/Ресурс 14.png">
+		<div class="move-car">
+			<img src="img/Ресурс 10.png">
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+		<div id="map" ></div>
+		<div class="contact" id="contact">
+			<div class="contact-info">
+				<h1>CONTACT INFORMATION</h1>
+				<div class="social">
+					<div class="Clicktoview"><a href="#">Click to view</a></div>
+					<div class="social-icons">
+						<div class="icon-wrapper">
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+						</div>
+						<div class="icon-wrapper">
+							<a href="#"><i class="fa fa-facebook"></i></a>	
+						</div>
+						<div class="icon-wrapper">
+							<a href="#"><i class="fa fa-twitter"></i></a>			
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contact-form">
+				<form onsubmit="check()">
+					<div class="title">
+						<h1>GET IN TOUCH</h1>
+					</div>
+					<div class="left-side">
+						<div class="user-right">
+							<div class="form-group">
+							    <input type="text" class="form-control form-control-lg" placeholder="Name">
+							    <div class="message" id="name_message"></div>
+							</div>
+							<div class="form-group">
+							    <input type="email" class="form-control form-control-lg" placeholder="Email">
+							    <div class="message" id="email_message"></div>
+							</div>
+							<div class="form-group">
+								<input id="subject" type="text" class="form-control form-control-lg" placeholder="Subject">
+								<div class="message" id="subject_message"></div>
+							</div>
+						</div>	
+						<div class="form-group textarea" >
+						    <textarea id="form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" placeholder="Text"></textarea>
+						    <div class="message" id="textarea_message"></div>
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="top-part">
+							<div class="radio">
+								<label class="container1">
+									mail
+								  	<input type="radio" name="radio">
+								  	<span class="checkmark1"></span>
+								</label>
+								<label class="container1">
+									femail
+								  	<input type="radio" name="radio">
+								  	<span class="checkmark1"></span>
+								</label>
+							</div>
+							<div class="message" id="radio_message"></div>
+						</div>	
+						<div class="message" id="radio_message"></div>
+						<div class="down-part">
+							<p>Sign up for newsletter:</p>
+							<label class="container">
+							  <input type="checkbox" >
+							  recive images
+							  <span class="checkmark"></span>
+							</label>
+							<label class="container">
+							  <input type="checkbox">
+							  recive promotions
+							  <span class="checkmark"></span>
+							</label>
+							<label class="container">
+							  <input type="checkbox">
+							  recive updates
+							  <span class="checkmark"></span>
+							</label>
+							<label class="container">
+							  <input type="checkbox">
+							  recive job offers
+							  <span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="submit-button">
+							<input type="submit" value="send">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="ft-wrapper pt-2">
+			<div class="copy">
+				<span>&copy; Copyright 2018</span>
+			</div>
+			<div class="author">
+				<span>Created by: Ashot Voskanian</span>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://maps.google.com/maps/api/js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ 	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
