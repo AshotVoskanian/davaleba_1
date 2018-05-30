@@ -124,6 +124,11 @@
 		padding:0px;
 		margin: 0 auto;
 	}
+	.right-side{
+		width: 90%;
+		padding:0px;
+		margin: 0 auto;
+	}
 	.top-part{
 		width: 100%;
 	}
@@ -143,6 +148,9 @@
 	}
 }
 @media(max-width: 442px){
+	.message{
+		font-size: 13px;
+	}
 	#nav-icon{
 		left: 85%;
 		bottom: 80%;
